@@ -8,7 +8,6 @@ const DetailPage = async ({
   params: { pokemonId: number };
 }) => {
   const pokemonInfo = await api.pokemons.getPokemon(pokemonId);
-  console.log(pokemonInfo);
   return (
     <Page width="sm">
       <Detail pokemonInfo={pokemonInfo} />
