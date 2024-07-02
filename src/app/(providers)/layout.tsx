@@ -1,17 +1,12 @@
-"use client";
-
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { PokemonsProvider } from "@/contexts/Pokemons.contexts";
+import { QueryProvider } from "@/query/QueryProvider";
 import { PropsWithChildren } from "react";
-
-const queryClient = new QueryClient();
 
 const ProvidersLayout = ({ children }: PropsWithChildren) => {
   return (
-    <QueryClientProvider client={queryClient}>
-      {children}
-      <ReactQueryDevtools />
-    </QueryClientProvider>
+    <QueryProvider>
+      <PokemonsProvider>{children}</PokemonsProvider>
+    </QueryProvider>
   );
 };
 

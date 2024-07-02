@@ -10,4 +10,9 @@ export class PokemonsAPI {
     const data = response.data;
     return data;
   }
+  async getPokemon(id: number) {
+    const response = await this.client.get(`/api/pokemons/${id}`);
+    const data = response.data;
+    return data;
+  }
 }

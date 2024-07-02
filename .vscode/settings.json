@@ -1,3 +1,9 @@
 {
-  "cSpell.words": ["getPokemons", "pokemons", "PokemonsAPI"]
+  "cSpell.words": [
+    "getFormatedId",
+    "getPokemons",
+    "pokemons",
+    "PokemonsAPI",
+    "pokomons"
+  ]
 }
