@@ -1,12 +1,14 @@
 "use client";
 
+import Page from "@/components/Page/Page";
 import { usePokemons } from "@/query/query.pokomons";
 
 const HomePage = () => {
   const { data, error, isPending } = usePokemons();
 
   if (isPending) return <div>Loading...</div>;
-  return <div>page</div>;
+
+  return <Page>hello</Page>;
 };
 
 export default HomePage;
