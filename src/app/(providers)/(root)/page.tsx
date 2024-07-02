@@ -1,6 +1,6 @@
 "use client";
 
-import Page from "@/components/Page/Page";
+import Page from "@/components/Page";
 import { usePokemons } from "@/query/query.pokomons";
 
 const HomePage = () => {
