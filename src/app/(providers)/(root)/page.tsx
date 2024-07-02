@@ -4,8 +4,8 @@ import { usePokemons } from "@/query/query.pokomons";
 
 const HomePage = () => {
   const { data, error, isPending } = usePokemons();
-  console.log(data, error, isPending);
 
+  if (isPending) return <div>Loading...</div>;
   return <div>page</div>;
 };
 
