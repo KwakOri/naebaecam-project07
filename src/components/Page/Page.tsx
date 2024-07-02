@@ -5,7 +5,7 @@ type PageProps = {} & PageVariantsProps;
 
 type PageVariantsProps = VariantProps<typeof pageVariant>;
 
-const pageVariant = cva("w-full mx-auto bg-gray-200", {
+const pageVariant = cva("w-full mx-auto bg-gray-950", {
   variants: {
     width: {
       sm: "max-w-[600px]",
